@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!--Personal Styles-->
+    <link rel="stylesheet" href="./sources/css/styles.css" />
+
+    <title>ECommerce</title>
+  </head>
+  <body>
+    <div class="container-flex" id="announcement">
+      Formant new member 10,000 won coupon pack
+    </div>
+    <div class="container-flex" id="headerAndMenu">
+      <div class="row">
+        <div class="col-2">
+          <a href="home.html"><img src="logo.png" width="100%" /></a>
+        </div>
+        <div class="col-3">
+          <ul>
+            <li><a href="#">PRODUCT</a></li>
+            <li><a href="#">MAGAZINE</a></li>
+            <li><a href="#">LOOKBOOK</a></li>
+            <li><a href="#">REVIEW</a></li>
+            <li><a href="#">C/S CENTER</a></li>
+          </ul>
+        </div>
+        <div class="col-4" style="padding: 9px 0px 0px 0px">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="search items here..."
+          />
+        </div>
+        <div class="col-1" id="searchBtn">
+          <a href="#"><img src="icons/search.png" /></a>
+        </div>
+        <div class="col-2" id="account">
+          <ul>
+            <li>
+              <a href="#"><img src="icons/cart.png" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="icons/fav.png" /></a>
+            </li>
+            <li>
+              <a href="./login.html"><img src="icons/sign.png" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- hardcoded login credentials
+    email: admin@sample.com
+    password: admin
+    -->
+    <label for="login" class="text-center">Login </label>
+    <input type="email" id="loginEmail" class="form-control" />
+    <input type="password" id="loginPassword" class="form-control" />
+    <input
+      type="button"
+      onclick="loginCredentials()"
+      class="btn btn-primary"
+      value="Login"
+    />
+    <!-- Error Alert Login-->
+    <div
+      class="alert alert-danger alert-dismissible fade show d-none"
+      id="loginCredentialsWrong"
+    >
+      <strong>Error!</strong> Incorrect Email Address
+    </div>
+
+    <div
+      class="d-none alert alert-danger alert-dismissible fade show"
+      id="loginCredentialsWrong"
+    >
+      <strong>Error!</strong> Incorrect Password
+    </div>
+
+    <!-- Error Alert Email-->
+
+    <div
+      class="alert alert-danger alert-dismissible fade show d-none"
+      id="loginCredentialsEmailError"
+    >
+      <strong>Error!</strong> Invalid Email
+    </div>
+
+    <!-- Success Alert -->
+    <div
+      class="alert alert-success alert-dismissible fade show d-none"
+      id="loginCredentialsCorrect"
+    >
+      <strong>Success!</strong> Your message has been sent successfully.
+    </div>
+
+    <!-- End of Login -->
+
+    <script src="./source/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
