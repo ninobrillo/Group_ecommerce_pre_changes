@@ -11,6 +11,12 @@
                 font-size: 14px;
                 padding-top: 4.5px;
             }
+            #headerAndMenu{
+                position: sticky;
+                top: 0;
+                z-index: 1;
+                background-color: white;
+            }
             #headerAndMenu #logo img{
                 width: 18em;
             }
