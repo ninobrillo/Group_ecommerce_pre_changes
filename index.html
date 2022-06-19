@@ -6,45 +6,45 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <title>ECOMMERCE WEBSITE</title>
-
-        
         <!--Personal Styles-->
         <link rel="stylesheet" href="./source/css/styles.css" >
+        
+    <!--Apply fluid image lightbox-->
+    <link rel="stylesheet" href="./source/css/fluid_image_lightbox.css" />
     </head>
-        <body>
-        <!--Announcements/Promos-->
-        <div class="container-flex" id="announcement">Formant new member 10,000 won coupon pack</div>
-        <!--Menu/Header-->
-        <div class="container-flex" id="headerAndMenu">
-            <div class="row">
-                <div class="col-2" id="logo">
-                    <a href="home.html"><img src="logo.png"/></a>
-                </div>
-                <div class="col-3">
-                    <ul>
-                        <li><a href="#">PRODUCT</a></li>
-                        <li><a href="#">MAGAZINE</a></li>
-                        <li><a href="#">LOOKBOOK</a></li>
-                        <li><a href="#">REVIEW</a></li>
-                        <li><a href="#">C/S CENTER</a></li>
-                    </ul>
-                </div>
-                <div class="col-4" style="padding: 9px 0px 0px 0px">
-                    <input type="text" class="form-control" placeholder="search items here..." />
-                </div>
-                <div class="col-1" id="searchBtn">
-                    <a href="#"><img src="icons/search.png"/></a>
-                </div>
-                <div class="col-2" id="account">
-                    <ul>
-                        <li><a href="./login.html"><img src="icons/cart.png"/></a></li>
-                        <li><a href="./login.html"><img src="icons/fav.png"/></a></li>
-                        <li><a href="./login.html"><img src="icons/sign.png"/></a></li>
-                    </ul>
-                </div>
+<body>
+    <div class="container">
+    <div class="container-flex" id="announcement">
+        Formant new member 10,000 won coupon pack
+    </div>
+    <div class="container-flex" id="headerAndMenu">
+        <div class="row">
+            <div class="col-2">
+                <a href="./index.html"><img src="logo.png" class="w-100 mt-3"/></a>
             </div>
+            <div class="col-1">
+                <h3 class="text-center mt-3 "><a class="text-decoration-none text-secondary" href="#">Products</a></h3>
+            </div>
+            <div class="col-2">
+                <h3 class="text-center mt-3"><a class="text-decoration-none text-secondary" href="#">About Us</a></h3>
+            </div>
+            <div class="col-2" id="account">
+                <ul>
+                    <li><a href="./login.html"><img src="icons/cart.png"/></a></li>
+                    <li><a href="./login.html"><img src="icons/fav.png"/></a></li>
+                    <li><a href="./login.html"><img src="icons/sign.png"/></a></li>
+                </ul>
+            </div>
+            <div class="col-4" style="padding: 9px 0px 0px 0px">
+                <input type="text" class="form-control" placeholder="search items here..." />
+            </div>
+            <div class="col-1" id="searchBtn">
+                <a href="#"><img src="icons/search.png"/></a>
+            </div>
+            
         </div>
-        <!--Ads-->
+    </div>
+    <ads>
         <div class="container-flex" id="ads">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -87,73 +87,100 @@
                 </button>
             </div>
         </div>
-
-        <!--Featured-->
+    </ads>
+    <contents>
         <div class="container">
-            <div class="separator">
-                <h5>MD's Pick</h5>
-            </div>
-            <div class="featured">
-                <div class="row mt-3">
-                    <div class="col-3"><img src="./img/featured1.jpg" ></div>
-                    <div class="col-3"><img src="./img/featured2.jpg"></div>
-                    <div class="col-3"><img src="./img/featured3.jpg"></div>
-                    <div class="col-3"><img src="./img/featured4.jpg"></div>
-                </div>
-            </div>
-        </div>
-        <!--Testimonials / Sub-contents-->
-        <div class="container-flex" id="sub_content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-9">
-                    <video class="img-fluid" autoplay loop muted>
-                        <source src="content2.mp4" type="video/mp4" />
-                    </video>
-                    </div>
-                    <div class="col-3">
-                        <div class="row"><img src="https://theforment.com/web/upload/images/v3_03.jpg"></div>
-                        <div class="row"><img src="https://theforment.com/web/upload/images/v1_02.jpg"></div>
-                        <div class="row"><img src="https://theforment.com/web/upload/images/v2_02.jpg"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+         
 
-        <!--Footer-->
-        <div class="container-flex" id="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h5>CONTACT US</h5>
-                        <h6>1-800-0000</h6>
-                        <h6>ABOUT US</h6>
-                        <h6>Career</h6>
-                        <h6>Terms & Conditions</h6>
-                        <h6>Privacy Policy</h6>
-                    </div>
-                    <div class="col">
-                        <h5>FIND US ON :</h5>
-                        <ul>
-                            <li><img src="./icons/fb.png" /></li>
-                            <li><img src="./icons/google.png" /></li>
-                            <li><img src="./icons/twitter.png" /></li>
-                        </ul>
+        <!-- Featured Items-->
+        <div>
+            <div class="separator mb-5 mt-5">
+                <h1 class="text-center display-1">MD's Pick</h1>
+                            </div>
+            <div class="gallery">
+              <div class="img-container">
+                <img
+                  src="https://source.unsplash.com/tzSLATuyZzM/640x853"
+                  alt="No elegance is possible without perfume"
+                  data-original="tzSLATuyZzM/1920x2560"
+                />
+              </div>
+              <div class="img-container">
+                <img
+                  src="https://source.unsplash.com/GWQ2KmCXrQA/640x1137"
+                  alt="It is the unseen, unforgettable, ultimate accessory"
+                  data-original="GWQ2KmCXrQA/1920x3413"
+                />
+              </div>
+              <div class="img-container">
+                <img
+                  src="https://source.unsplash.com/nkWnc-W_GP8/640x853"
+                  alt="A perfume is like a piece of clothing, a message"
+                  data-original="nkWnc-W_GP8/1920x2560"
+                />
+              </div>
+            </div>
+            <div class="modal">
+              <img src="" alt="" class="full-img" />
+              <p class="caption"></p>
+            </div>
+          </div>
 
-                        <ul>
-                            <li><img src="./icons/ig.png" /></li>
-                            <li><img src="./icons/yt.png" /></li>
-                            <li><img src="./icons/in.png" /></li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <h5>Any question? Let us help you</h5>
-                        <h6>Contact  |   Help</h6>
-                        <h6>About  |   Privacy  |   Terms of Service</h6>
-                        <h6>© 2012, 2022 Hokage store</h6>
-                    </div>
+<!--End Featured Items-->
+        </div>
+    <div class="container-flex mt-5" id="sub_content">
+        <div class="container">
+            <div class="row">
+                <div class="col-9">
+                <video class="img-fluid" autoplay loop muted>
+                    <source src="content2.mp4" type="video/mp4" />
+                </video>
+                </div>
+                <div class="col-3">
+                    <div class="row"><img src="https://theforment.com/web/upload/images/v3_03.jpg"></div>
+                    <div class="row"><img src="https://theforment.com/web/upload/images/v1_02.jpg"></div>
+                    <div class="row"><img src="https://theforment.com/web/upload/images/v2_02.jpg"></div>
                 </div>
             </div>
         </div>
-    </body>
+    </div>
+    </contents>
+    <footer>
+    <div class="container-flex" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h5>CONTACT US</h5>
+                    <h6>1-800-0000</h6>
+                    <h6>ABOUT US</h6>
+                    <h6>Career</h6>
+                    <h6>Terms & Conditions</h6>
+                    <h6>Privacy Policy</h6>
+                </div>
+                <div class="col">
+                    <h5>FIND US ON :</h5>
+                    <ul>
+                        <li><img src="./icons/fb.png" /></li>
+                        <li><img src="./icons/google.png" /></li>
+                        <li><img src="./icons/twitter.png" /></li>
+                    </ul>
+
+                    <ul>
+                        <li><img src="./icons/ig.png" /></li>
+                        <li><img src="./icons/yt.png" /></li>
+                        <li><img src="./icons/in.png" /></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Any question? Let us help you</h5>
+                    <h6>Contact  |   Help</h6>
+                    <h6>About  |   Privacy  |   Terms of Service</h6>
+                    <h6>© 2012, 2022 Hokage store</h6>
+                </div>
+            </div>
+    </div>
+    </footer>
+    <!--Apply fluid image lightbox-->
+    <script src="./source/js/fluid_image_lightbox.js"></script>
+</body>
 </html>
