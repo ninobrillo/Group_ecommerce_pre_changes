@@ -44,7 +44,7 @@ function loginAlertCorrect(result) {
         var b = document.getElementById("loginCredentialsWrong");
         b.classList.add("d-none");
         console.log("Login Credential Correct")        
-        window.location.href = "./featured_items.html";
+        window.location.href = "./featured_items.htmlfetc";
     } else {
         var a = document.getElementById("loginCredentialsWrong");
         a.classList.remove("d-none");
