@@ -20,7 +20,6 @@ loginCredentials = () => {
         var a = document.getElementById("loginCredentialsEmailError");
         a.classList.add("d-none");
 
-        window.location.href = "./featured_items.html";
     } else {
 
         console.log("trigger Email Error")
@@ -44,7 +43,8 @@ function loginAlertCorrect(result) {
 
         var b = document.getElementById("loginCredentialsWrong");
         b.classList.add("d-none");
-        console.log("Login Credential Correct")
+        console.log("Login Credential Correct")        
+        window.location.href = "./featured_items.html";
     } else {
         var a = document.getElementById("loginCredentialsWrong");
         a.classList.remove("d-none");
@@ -57,8 +57,6 @@ function loginAlertCorrect(result) {
 
 // \S+@\S no white space and 1 @ only
 // \S+\.\S no white space and 1 . only
-
-
 validateEmail = (email) => {
     var re = /\S+@\S+\.\S+/;
     return re.test(email);
