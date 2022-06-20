@@ -8,30 +8,42 @@
         <title>ECOMMERCE WEBSITE</title>
         <!--Personal Styles-->
         <link rel="stylesheet" href="./source/css/styles.css" >
+        
+    <!--Apply fluid image lightbox-->
+    <link rel="stylesheet" href="./source/css/fluid_image_lightbox.css" />
+    <style>
+        p {
+            animation: change infinite 3s;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        @keyframes change {
+            0% {color: yellow;}
+
+            35% {color: red;}
+
+            70% {color: green;}
+
+            100% {color: blue;}
+            
+        }
+    </style>
     </head>
-        <body>
-        <!--Announcements/Promos-->
-        <div class="container-flex" id="announcement">Formant new member 10,000 won coupon pack</div>
-        <!--Menu/Header-->
+<body>
+    <div class="container">
+        <div class="container-flex" id="announcement">
+        <marquee behavior="scroll" direction="left"><p>Formant new member 10,000 won coupon pack</p></marquee>
+        </div>
         <div class="container-flex" id="headerAndMenu">
             <div class="row">
-                <div class="col-2" id="logo">
-                    <a href="home.html"><img src="logo.png"/></a>
+                <div class="col-2">
+                    <a href="./index.html"><img src="logo.png" class="w-100 mt-3"/></a>
                 </div>
-                <div class="col-3">
-                    <ul>
-                        <li><a href="#">PRODUCT</a></li>
-                        <li><a href="#">MAGAZINE</a></li>
-                        <li><a href="#">LOOKBOOK</a></li>
-                        <li><a href="#">REVIEW</a></li>
-                        <li><a href="#">C/S CENTER</a></li>
-                    </ul>
+                <div class="col-1">
+                    <h3 class="text-center mt-3 "><a class="text-decoration-none text-secondary" href="#">Products</a></h3>
                 </div>
-                <div class="col-4" style="padding: 9px 0px 0px 0px">
-                    <input type="text" class="form-control" placeholder="search items here..." />
-                </div>
-                <div class="col-1" id="searchBtn">
-                    <a href="#"><img src="icons/search.png"/></a>
+                <div class="col-2">
+                    <h3 class="text-center mt-3"><a class="text-decoration-none text-secondary" href="#">About Us</a></h3>
                 </div>
                 <div class="col-2" id="account">
                     <ul>
@@ -40,9 +52,16 @@
                         <li><a href="./login.html"><img src="icons/sign.png"/></a></li>
                     </ul>
                 </div>
+                <div class="col-4" style="padding: 9px 0px 0px 0px">
+                    <input type="text" class="form-control" placeholder="search items here..." />
+                </div>
+                <div class="col-1" id="searchBtn">
+                    <a href="#"><img src="icons/search.png"/></a>
+                </div>
+                
             </div>
         </div>
-        <!--Footer-->
+
         <div class="container-flex" id="footer">
             <div class="container">
                 <div class="row">
@@ -77,5 +96,8 @@
                 </div>
             </div>
         </div>
-    </body>
+    </div>
+    <!--Apply fluid image lightbox-->
+    <script src="./source/js/fluid_image_lightbox.js"></script>
+</body>
 </html>
