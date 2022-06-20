@@ -17,52 +17,39 @@
 
     <!--Personal Styles-->
     <link rel="stylesheet" href="./source/css/styles.css" />
-
+    <!--Apply fluid image lightbox-->
+    <link rel="stylesheet" href="./source/css/fluid_image_lightbox.css" />
     <title>ECommerce</title>
   </head>
   <body>
-    <div class="container-flex" id="announcement">
-      Formant new member 10,000 won coupon pack
-    </div>
+    <div class="container">
     <div class="container-flex" id="headerAndMenu">
       <div class="row">
-        <div class="col-2">
-          <a href="./index.html"><img src="logo.png" width="100%" /></a>
-        </div>
-        <div class="col-3">
-          <ul>
-            <li><a href="#">PRODUCT</a></li>
-            <li><a href="#">MAGAZINE</a></li>
-            <li><a href="#">LOOKBOOK</a></li>
-            <li><a href="#">REVIEW</a></li>
-            <li><a href="#">C/S CENTER</a></li>
-          </ul>
-        </div>
-        <div class="col-4" style="padding: 9px 0px 0px 0px">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="search items here..."
-          />
-        </div>
-        <div class="col-1" id="searchBtn">
-          <a href="#"><img src="icons/search.png" /></a>
-        </div>
-        <div class="col-2" id="account">
-          <ul>
-            <li>
-              <a href="./login.html"><img src="icons/cart.png" /></a>
-            </li>
-            <li>
-              <a href="./login.html"><img src="icons/fav.png" /></a>
-            </li>
-            <li>
-              <a href="./login.html"><img src="icons/sign.png" /></a>
-            </li>
-          </ul>
-        </div>
+          <div class="col-2">
+              <a href="./index.html"><img src="logo.png" class="w-100 mt-3"/></a>
+          </div>
+          <div class="col-1">
+              <h3 class="text-center mt-3 "><a class="text-decoration-none text-secondary" href="#">Products</a></h3>
+          </div>
+          <div class="col-2">
+              <h3 class="text-center mt-3"><a class="text-decoration-none text-secondary" href="#">About Us</a></h3>
+          </div>
+          <div class="col-2" id="account">
+              <ul>
+                  <li><a href="./login.html"><img src="icons/cart.png"/></a></li>
+                  <li><a href="./login.html"><img src="icons/fav.png"/></a></li>
+                  <li><a href="./login.html"><img src="icons/sign.png"/></a></li>
+              </ul>
+          </div>
+          <div class="col-4" style="padding: 9px 0px 0px 0px">
+              <input type="text" class="form-control" placeholder="search items here..." />
+          </div>
+          <div class="col-1" id="searchBtn">
+              <a href="#"><img src="icons/search.png"/></a>
+          </div>
+          
       </div>
-    </div>
+  </div>
     <!-- hardcoded login credentials
     email: admin@sample.com
     password: admin
@@ -106,6 +93,7 @@
       id="loginCredentialsCorrect"
     >
       <strong>Success!</strong> Your message has been sent successfully.
+    </div>
     </div>
 
     <!-- End of Login -->
