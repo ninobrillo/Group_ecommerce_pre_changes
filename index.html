@@ -22,55 +22,37 @@
     <link rel="stylesheet" href="./source/css/fluid_image_lightbox.css" />
   </head>
   <body>
-    <div class="container">
       <div class="container-flex" id="announcement">
-        new member 10,000 won coupon pack
+          Formant new member 10,000 won coupon pack
       </div>
       <div class="container-flex" id="headerAndMenu">
-        <div class="row">
-          <div class="col-2">
-            <a href="./index.html"><img src="logo.png" class="w-100 mt-3" /></a>
+          <div class="row">
+              <div class="col-2">
+                  <a href="index.html"><img src="logo.png" width="100%"/></a>
+              </div>
+              <div class="col-3">
+                  <ul>
+                      <li><a href="category.html">FOR MEN</a></li>
+                      <li><a href="#">FOR WOMEN</a></li>
+                      <li><a href="#">BESTSELLER</a></li>
+                      <li><a href="#">NEW ARRIVALS</a></li>
+                      <li><a href="#">ALL COLLECTIONS</a></li>
+                  </ul>
+              </div>
+              <div class="col-4" style="padding: 9px 0px 0px 0px">
+                  <input type="text" class="form-control" placeholder="search items here..." />
+              </div>
+              <div class="col-1" id="searchBtn">
+                  <a href="#"><img src="icons/search.png"/></a>
+              </div>
+              <div class="col-2" id="account">
+                  <ul>
+                      <li><a href="./login.html"><img src="icons/cart.png"/></a></li>
+                      <li><a href="./login.html"><img src="icons/fav.png"/></a></li>
+                      <li><a href="./login.html"><img src="icons/sign.png"/></a></li>
+                  </ul>
+              </div>
           </div>
-          <div class="col-1">
-            <h3 class="text-center mt-3">
-              <a
-                class="text-decoration-none text-secondary"
-                href="./category.html"
-                >Products</a
-              >
-            </h3>
-          </div>
-          <div class="col-2">
-            <h3 class="text-center mt-3">
-              <a class="text-decoration-none text-secondary" href="#"
-                >About Us</a
-              >
-            </h3>
-          </div>
-          <div class="col-2" id="account">
-            <ul>
-              <li>
-                <a href="./login.html"><img src="icons/cart.png" /></a>
-              </li>
-              <li>
-                <a href="./login.html"><img src="icons/fav.png" /></a>
-              </li>
-              <li>
-                <a href="./login.html"><img src="icons/sign.png" /></a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-4" style="padding: 9px 0px 0px 0px">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="search items here..."
-            />
-          </div>
-          <div class="col-1" id="searchBtn">
-            <a href="#"><img src="icons/search.png" /></a>
-          </div>
-        </div>
       </div>
       <ads>
         <div class="container-flex" id="ads">
@@ -230,6 +212,47 @@
           </div>
         </div>
       </contents>
+
+      <div class="containerone">
+        <h1>OUR BUYER'S REVIEWS</h1>
+        <div class="faders">
+          <div class="left"></div>
+          <div class="right"></div>
+        </div>
+
+        <div class="items">
+          <div class="entry">
+            <p class="namet">Heejin</p>
+            <img src="./img/perfume1.jpg" />
+            <p class="quote">"It smells like lavender marshmallows with a cool freshness. It�s very soft, easy to wear and a very relaxing scent."</p>
+          </div>
+          <div class="entry">
+            <p class="namet">Kimlip</p>
+            <img src="./img/perfume2.jpg" alt="Smiling person" />
+            <p class="quote">"Very suitable for layering with light or fresh perfumes in summer and spring!"</p>
+          </div>
+          <div class="entry">
+            <p class="namet">Chuu</p>
+            <img src="./img/perfume3.jpg" alt="Smiling person" />
+            <p class="quote">"This perfume is definitely the go to for a sweet super clean and fresh smell. I like it a lot!"</p>
+          </div>
+          <div class="entry">
+            <p class="namet">Jinsoul</p>
+            <img src="./img/perfume4.jpg" alt="Smiling person"/>
+            <p class="quote">"Floral Fruity fragrance for women. Smells very fresh, yammy, lemony-rose, and all together it is cute and sweet, joyful and optimistic."</p>
+          </div>
+          <div class="entry">
+            <p class="namet">Yves</p>
+            <img src="./img/perfume1.jpg" alt="Smiling person" />
+            <p class="quote">"Some herbal notes are blending with flowers and getting a new character. Works in any situation and any time of year."</p>
+          </div>
+          <div class="entry">
+            <p class="namet">Haseul</p>
+            <img src="./img/perfume2.jpg" alt="Smiling person" />
+            <p class="quote">"It's a natural, plant-based eau de cologne perfume that leaves an unforgettable, unique scent."</p>
+          </div>
+        </div>
+      </div>
       <footer>
         <div class="container-flex" id="footer">
           <div class="container">
@@ -268,6 +291,5 @@
           <script src="./source/js/fluid_image_lightbox.js"></script>
         </div>
       </footer>
-    </div>
   </body>
 </html>
